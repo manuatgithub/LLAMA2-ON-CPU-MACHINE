@@ -22,4 +22,12 @@ install requirements
 pip install -r requirements.txt
 
 
+### ERROR :
+ERROR: Could not build wheels for greenlet, which is required to install pyproject.toml-based projects
+(cpullama) manu@Manoharans-MacBook-Air LLAMA2-ON-CPU-MACHINE % pip list
+
+### Solution:
+pip install --only-binary :all: greenlet
+pip install --only-binary :all: Flask-SQLAlchemy
+
 
